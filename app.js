@@ -1,39 +1,16 @@
 const express = require('express');
 const sls = require('serverless-http');
 const app = express();
+const data = require('./data.json');
 
 app.get('/', async (req, res, next) => {
-    const team = [
-        {
-            firstName: 'Alec',
-            lastName: 'Down',
-            id: 'UGPBRB6Q1'
-        },
-        {
-            firstName: 'Mariam',
-            lastName: 'Sallam',
-            id: 'U8769316C'
-        },
-        {
-            firstName: 'Shaté',
-            lastName: 'Edwards',
-            id: 'U94AGP23T'
-        },
-        {
-            firstName: 'Iris',
-            lastName: 'Gardner',
-            id: 'UALEN7SE4'
-        },
-        {
-            firstName: 'Lindsey',
-            lastName: 'DesRochers',
-            id: 'UMS9AE4S3'
-        }
-    ];
+    const randomTeamMember = Math.floor(Math.random() * data.team.length);
+    const randomRootVegetable = Math.floor(
+        Math.random() * data.vegetables.length
+    );
+    const randomAdjective = Math.floor(Math.random() * data.adjectives.length);
 
-    const random = Math.floor(Math.random() * team.length);
-
-    const randomScrumStart = '<@' + team[random].id + '> kicks of scrum today!';
+    const randomScrumStart = `<@${data.team[randomTeamMember].id}> has the ${data.adjectives[randomAdjective]} ${data.vegetables[randomRootVegetable]}`;
 
     res.status(200).json({
         response_type: 'in_channel',

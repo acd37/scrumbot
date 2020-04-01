@@ -1,0 +1,54 @@
+{
+  "team": [
+    {
+      "firstName": "Alec",
+      "lastName": "Down",
+      "id": "UGPBRB6Q1"
+    },
+    {
+      "firstName": "Mariam",
+      "lastName": "Sallam",
+      "id": "U8769316C"
+    },
+    {
+      "firstName": "Shaté",
+      "lastName": "Hayes",
+      "id": "U94AGP23T"
+    },
+    {
+      "firstName": "Iris",
+      "lastName": "Gardner",
+      "id": "UALEN7SE4"
+    },
+    {
+      "firstName": "Lindsey",
+      "lastName": "DesRochers",
+      "id": "UMS9AE4S3"
+    }
+  ],
+  "vegetables": [
+    "onion",
+    "sweet potato",
+    "turnip",
+    "beet",
+    "radish",
+    "parsnip",
+    "carrot",
+    "rutabaga",
+    "yam",
+    "cassava",
+    "celery root"
+  ],
+  "adjectives": [
+    "warm",
+    "subzero",
+    "frosty",
+    "moldy",
+    "frozen",
+    "body temperature",
+    "cool",
+    "burned",
+    "hot",
+    "scalding"
+  ]
+}
